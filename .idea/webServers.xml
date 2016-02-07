@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="afaeb406-78ad-44a2-87b7-583c4ae70e4c" name="layuda" url="http://www.layuda.de">
+        <fileTransfer host="s65.goserver.host" port="22" rootFolder="/home/www/" accessType="SFTP" username="web59">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
