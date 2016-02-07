@@ -311,9 +311,9 @@ body a {
 /* -------------------------------------------------------------------------------- */
 
 
-.header { padding: 70px 0; }
+.header { padding: 60px 0; }
 
-.header .cover { background: rgba(29,29,29,0.25); }
+.header .cover { background: #8A7776; }
 
 .header-inner { position: relative; }
 
@@ -322,13 +322,23 @@ body a {
 .header .logo { display: inline-block; }
 
 .header .logo img {
-	max-height: 80px;
+	max-height: 120px;
 	width: auto;
 }
 
 .blog-title {
+	/*
 	font-family: 'Pacifico', sans-serif;
-	font-size: 2.25em;
+	*/
+/*
+	font-family: 'Nothing You Could Do', sans-serif;
+	font-family: 'Bonbon', sans-serif;
+	font-family: 'Dawning of a New Day', sans-serif;
+	font-family: 'Reenie Beanie', sans-serif;
+	font-family: 'Tangerine', sans-serif;
+*/
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 6em;
 	text-align: center;
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.25);
 }
