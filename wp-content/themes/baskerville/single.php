@@ -232,7 +232,7 @@
 								$prev_post = get_previous_post();
 								if (!empty( $prev_post )): ?>
 								
-									<a class="post-nav-prev" title="<?php _e('Previous post:', 'baskerville'); echo ' ' . esc_attr( get_the_title($prev_post) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php _e('Previous post', 'baskerville'); ?></a>
+									<a class="post-nav-prev" title="<?php _e('Previous post:'); echo ' ' . esc_attr( get_the_title($prev_post) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php _e('Previous post', 'baskerville'); ?></a>
 							
 								<?php endif; ?>
 								
@@ -240,7 +240,7 @@
 								$next_post = get_next_post();
 								if (!empty( $next_post )): ?>
 									
-									<a class="post-nav-next" title="<?php _e('Next post:', 'baskerville'); echo ' ' . esc_attr( get_the_title($next_post) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><?php _e('Next post', 'baskerville'); ?></a>
+									<a class="post-nav-next" title="<?php _e('Next post:'); echo ' ' . esc_attr( get_the_title($next_post) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><?php _e('Next post', 'baskerville'); ?></a>
 							
 								<?php endif; ?>
 								
@@ -260,7 +260,7 @@
 												                        
 			   	<?php endwhile; else: ?>
 			
-					<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "baskerville"); ?></p>
+					<p><?php _e("We couldn't find any posts that matched your query. Please try again."); ?></p>
 				
 				<?php endif; ?>    
 		

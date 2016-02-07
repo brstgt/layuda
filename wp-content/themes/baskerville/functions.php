@@ -222,7 +222,7 @@ function baskerville_meta() { ?>
 
 	<div class="post-meta">
 	
-		<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time( 'Y/m/d' ); ?></a>
+		<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time( __('Y/m/d') ); ?></a>
 		
 		<?php
 		
@@ -341,9 +341,9 @@ function baskerville_comment( $comment, $args, $depth ) {
 					
 					<div class="comment-actions">
 					
-						<?php edit_comment_link( __( 'Edit', 'baskerville' ), '', '' ); ?>
+						<?php edit_comment_link( __( 'Edit'), '', '' ); ?>
 						
-						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'baskerville' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply'), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 						
 						<div class="clear"></div>
 					
