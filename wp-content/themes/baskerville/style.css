@@ -103,6 +103,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+body.custom-background {
+	background: #D2C1C0 !important;
+}
+
 body a {
 	color: #DAB8CC;
 	text-decoration: none;
@@ -114,7 +118,7 @@ body a:hover {
 }
 
 #commentform a, .content a {
-	color: #9B647F;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -255,7 +259,10 @@ body a {
 .section-inner.wide { width: 1240px; }
 .section-inner.thin { width: 700px; }
 
-.bg-dark { background-color: #1d1d1d; }
+.bg-dark {
+//	background-color: #BBB2B4;
+	background: rgba(221, 221, 221, 0.72);
+}
 .bg-graphite { background-color: #262626; }
 .bg-grey { background-color: #f1f1f1; }
 
@@ -422,7 +429,7 @@ body a {
 	display: block;
 	padding: 27px;
 	font-size: 0.85em;
-	color: #999;
+	color: #444;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -446,7 +453,7 @@ body a {
 	margin-top: -2px;
 }
 
-.main-menu li:hover > a { cursor: pointer; color: #fff; }
+.main-menu li:hover > a { cursor: pointer; color: #666; }
 
 .main-menu > .has-children:hover > a::after,
 .main-menu > .page_item_has_children:hover > a::after { border-top-color: #fff; }
@@ -669,7 +676,6 @@ body a {
 }
 
 .post-header .post-title a { color: #2B3542; }
-.post-header .post-title a:hover { color: #9B647F; }
 
 .post-excerpt { padding: 10%; }
 
@@ -837,7 +843,7 @@ body a {
 }
 
 .post-link a:hover { 
-	color: #DAB8CC; 
+	color: #DAB8CC;
 	text-decoration: underline;
 }
 
