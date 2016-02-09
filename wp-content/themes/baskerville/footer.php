@@ -99,10 +99,22 @@
 			
 				<div id="meta" class="widget widget_text">
 					<div class="widget-content">
-					
+
+						<h3 class="widget-title"><?php _e( 'Latest posts', 'baskerville' ); ?></h3>
+
+						<ul>
+							<?php
+							$args = array( 'numberposts' => '2', 'post_status' => 'publish' );
+							$recent_posts = wp_get_recent_posts( $args );
+							foreach( $recent_posts as $recent ){
+								echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+							}
+							?>
+						</ul>
+						<!--
 						<h3 class="widget-title"><?php _e( "Text widget", "baskerville" ); ?></h3>
 						<p><?php _e( "These widgets are displayed because you haven't added any widgets of your own yet. You can do so at Appearance > Widgets in the WordPress settings.", "baskerville" ); ?></p>
-		                
+		                -->
 					</div>
                 </div>
 								
